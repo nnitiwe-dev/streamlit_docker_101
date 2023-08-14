@@ -16,7 +16,7 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Build Docker Image
-        run: docker buildx build -t nnitiwe/nnitiwe-image-streamlit:latest -f docker/Dockerfile .  # image name
+        run: docker build -t nnitiwe/nnitiwe-image-streamlit:latest -f docker/Dockerfile .  # image name
         
 
       - name: Log in to Docker Hub 
