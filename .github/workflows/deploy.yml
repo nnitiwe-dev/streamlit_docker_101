@@ -31,4 +31,4 @@ jobs:
 
       - name: Run Docker Container
         run: |
-          docker run -d -p 8501:8501 nnitiwe/nitiwe-image-streamlit:latest  # image name
+          docker run -d -p 8501:8501 nnitiwe/nnitiwe-image-streamlit:latest  # image name
