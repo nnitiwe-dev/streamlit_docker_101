@@ -13,7 +13,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy Streamlit app source code into the container
-COPY ../app
+COPY app $APP_HOME
 
 # Expose the Streamlit app port
 EXPOSE $STREAMLIT_PORT
